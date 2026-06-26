@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9Tenths Creations - Product Catalog</title>
+    <style>
+        :root {
+            --primary: #007bff;
+            --dark: #343a40;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --border: #dee2e6;
+            --text: #212529;
+            --text-muted: #6c757d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.5;
+            padding-bottom: 60px;
+        }
+
+        header {
+            background-color: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            color: var(--border);
+            font-size: 0.9rem;
+        }
+
+        .contact-bar {
+            background-color: #23272b;
+            color: var(--white);
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 8px 15px;
+            font-size: 0.85rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-bar a {
+            color: var(--border);
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        .category-title {
+            font-size: 1.3rem;
+            margin: 25px 0 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--dark);
+            color: var(--dark);
+            text-transform: uppercase;
+        }
+
+        .product-card {
+            background-color: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-style: italic;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            gap: 10px;
+        }
+
+        .product-title {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: var(--dark);
+        }
+
+        .product-price {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: var(--primary);
+            white-space: nowrap;
+        }
+
+        .product-desc {
+            font-size: 0.95rem;
+            color: #495057;
+            margin-bottom: 12px;
+        }
+
+        .product-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            background: var(--light);
+            padding: 6px 10px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .order-footer {
+            background-color: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 20px 15px;
+            font-size: 0.85rem;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>9Tenths Creations</h1>
+        <p>Custom 3D Printing & Laser Engraving</p>
+    </header>
+
+    <div class="contact-bar">
+        <span>📍 Based in Maine</span>
+        <span>✉️ order@9tenths.com</span>
+    </div>
+
+    <main>
+        <!-- CATEGORY: 3D PRINTS -->
+        <div class="category-title">3D Print Artwork</div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <!-- Replace 'images/statuette.jpg' with your real image file path later -->
+                <img src="images/statuette.jpg" alt="Custom 3D Statuette">
+            </div>
+            <div class="product-info">
+                <div class="product-header">
+                    <span class="product-title">Custom 2D Photo to 3D Statuette</span>
+                    <span class="product-price">$45.00+</span>
+                </div>
+                <p class="product-desc">Turn your favorite memories into dimensional physical keepsakes. Hand-designed relief carvings and stand-up statuettes meticulously processed from your flat 2D photographs.</p>
+                <span class="product-meta">Material: Premium Silk PLA</span>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images/holy_grenade.jpg" alt="Holy Hand Grenade Prop">
+            </div>
+            <div class="product-info">
+                <div class="product-header">
+                    <span class="product-title">The Holy Hand Grenade Prop</span>
+                    <span class="product-price">$35.00</span>
+                </div>
+                <p class="product-desc">Bring a piece of classic comedy to your shelves. A beautifully detailed, full-scale prop reproduction finished with a metallic look. Must count to three—no more, no less.</p>
+                <span class="product-meta">Category: Pop Culture Props</span>
+            </div>
+        </div>
+
+        <!-- CATEGORY: LASER ENGRAVING -->
+        <div class="category-title">Laser Engraving</div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images/steel_tags.jpg" alt="Custom Steel Tags">
+            </div>
+            <div class="product-info">
+                <div class="product-header">
+                    <span class="product-title">Custom Engraved Stainless Steel Tags</span>
+                    <span class="product-price">$10.00</span>
+                </div>
+                <p class="product-desc">Heavy-duty, razor-sharp laser engraving on durable steel blanks. Perfect for custom tracking tags, keychains, personalized gear identifiers, or custom branding.</p>
+                <span class="product-meta">Material: Stainless Steel</span>
+            </div>
+        </div>
+
+        <div class="order-footer">
+            <p style="font-weight: bold; margin-bottom: 5px;">How to Order</p>
+            <p>Send a message or email with the items you want. For custom 3D statuettes, please include the high-resolution photo you would like processed.</p>
+        </div>
+    </main>
+
+</body>
+</html>
